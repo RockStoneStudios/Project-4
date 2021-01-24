@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root {
+    --primary-color : white;
+    --secondary-color : rgb(61,68,74);
+    --highlight-color : #3282b8;
+     
+    --dt-status-available-color : greenyellow;
+    --dt-status-away-color : lightsalmon;
+    --dt-status-offline-color : lightgray;
+
+     --dt-padding : 12px;
+     --dt-padding-s : 6px;
+     --dt-padding-xs : 2px;
+
+}
+
+.material-icons {
+    font-size: 16px;
+}
+
+ 
+
+.datatable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #2a3339;
+    border-radius: 3px;
+    color: var(--primary-color);
+    width: 650px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.datatable-container .header-tools{
+    border-bottom:  solid 1px var(--secondary-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+.datatable-container .header-tools .search{
+    width: 30%;
+}
+
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:solid 1px var(--secondary-color);
+    color: var(--primary-color);
+}
+.datatable-container .header-tools .tools{
+    width: 70%;
+}
+.datatable-container .header-tools .tools ul{
+    margin:  0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .tools ul li button{
+    color: var(--primary-color);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .header-tools .tools ul li button:hover{
+    background: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+.datatable-container .header-tools .tools ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+
+
+
